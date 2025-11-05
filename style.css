@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: whitesmoke;
+  list-style: none;
+}
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  padding-inline: 7rem;
+}
+
+nav {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link {
+  font-size: 1rem;
+}
+
+section {
+  height: calc(100vh - 13vh);
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 6vw;
+  line-height: 7.5vw;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: transparent;
+  -webkit-text-stroke: 0.1rem whitesmoke;
+}
+
+section p {
+  font-size: 1.5rem;
+  min-width: 600px;
+  opacity: 0.4;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: 0.1rem solid white;
+  border-radius: 5rem;
+  padding: 0.6rem 1.3rem;
+  background: whitesmoke;
+  color: black;
+  transition: 0.5sec ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  color: whitesmoke;
+}
+
+spline-viewer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  scale: 1.2;
+}
